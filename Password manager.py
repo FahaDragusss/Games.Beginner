@@ -33,7 +33,6 @@ def add():
         encrypted_pass = fer.encrypt(pwd.encode()).decode()
         f.write(name + "|" + encrypted_pass + "\n")
 
-# Ensure key.txt exists and contains a key
 if not os.path.exists("key.txt"):
     write_key()
 
